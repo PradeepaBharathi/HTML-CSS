@@ -55,7 +55,7 @@ hr.solid {
 }
 hr.solid2 {
     border-top: 1px solid #036ac7;
-    width: 33.5rem;
+    width: 31.3rem;
     position: absolute;
     top: 7%;
     right:0.1rem;
@@ -65,7 +65,7 @@ hr.solid2 {
 }
 .solid3{
     border-top: 1px solid #036ac7;
-        width: 27.3rem;
+        width: 23.8rem;
         position: absolute;
         top: 7%;
         right: 0.1rem;
@@ -74,13 +74,24 @@ hr.solid2 {
 
 .best_solution{
     display: flex;
-    margin: 10%;
+    margin: 15%;
+    align-items: center;
     justify-content: space-between;
 
 }
-.solution_shape,.solution_text{
+.solution_text{
     flex: 1;
     padding: 30px;
+    margin-left: 1rem;
+
+}
+
+
+
+.solution_shape{
+    flex: 1;
+    padding: 30px;
+    margin-left: 2.5rem;
 }
 .circle-div{
     display: flex;
@@ -101,8 +112,16 @@ hr.solid2 {
 .solution_text{
     display: flex;
     flex-direction: column;
+   margin-left: 0;
     gap: 2.5rem;
 }
+.solution_text_2{
+    display: flex;
+    flex-direction: column;
+   margin-right:2.5rem ;
+    gap: 2.5rem;
+}
+
 
 .cyan_area {
     position: absolute;
@@ -173,10 +192,13 @@ img {
 }
 
 .second_card{
-    flex: 0 0 calc(50% - 90px);
+    
     font-size: small;
 }
-
+.secondcard1,.secondcard2
+{
+    margin-right:2.5rem;
+}
 .get_started{
     background-color: #ebebeb;
     width: 100%;
@@ -256,20 +278,23 @@ img {
  .next{
     font-size: 10px;
  }
-@media screen and (max-width:425px) {
+@media screen and (max-width:426px) and (min-width:320px){
  
     .nav-bar{
         display: none !important;
     }
     .nav-bar-small{
-        display: flex !important;
-        justify-content: space-between !important;
+        display: flex ;
+       justify-content: space-between;
+      
         font-size: 1rem;
         font-weight: bold;
-        width: 68%;
+        width: 19.9rem
     
        
     }
+
+   
           .nav-bar-small2 {
               display: flex !important;
               justify-content: space-between ;
@@ -288,6 +313,9 @@ img {
     .best_solution{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+      
+       
     }
     .head{
         font-size: 1rem;
@@ -324,12 +352,8 @@ img {
     .footer{
         font-size: 0.5rem;
     }
-      .features{
-        margin-right: 77px;
-      } 
-      .card-container2{
-        margin-right: 77px;
-      }
+  
+   
   .features_2 {
 
       width: 95%;
@@ -337,55 +361,61 @@ img {
       margin: 0 auto;
       margin-top: 7rem;
       margin-bottom: 8rem;
+      margin-left: 30px !important ;
       
       text-align: center;
   }
-  .features_3{
-    margin-right: 120px;
-  }
-  .features_2 {
-    
-      margin-left: 30px !important ;
-  }
+
+
   .get_started{
     width: auto;
   }
- 
-  .solution_text,.start-text{
-    margin-right: 70px;
-  }
+
   .solution_shape{
     margin-right: 45px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:427px) {
     .nav-bar-small2{
         display: none;
     }
     .nav-bar{
-       padding: 2rem 1rem;
-       justify-content: flex-start !important;
-       gap:4rem
+       padding: 2rem 0.5rem;
+   
        
       
     }
+
+    .card-container{
+        width: 48rem;
+        gap: 4rem;
+    }
+
+    .card-container2{
+        width: 27rem;
+    }
+
+   
+    .second_card{
+        margin-left: 10px;
+    }
+   
         .card {
             flex: 0 0 calc(50% - 190px);
+            
             
         }
                 .solid2 {
                   
-                    width: 19.1rem !important;
+                    width: 15rem !important;
                 }
                 .solid3{
                     width: 4.3rem !important;
                 }
-                .features_2{
-                    margin-left: 100px;
-                }
+              
      .features_3{
-        width: 85%;
+      
         display: flex;
         align-items: center;
         justify-content: center;
@@ -396,3 +426,23 @@ img {
      }         
 }
 
+@media screen and (max-width: 1024px) and (min-width:769px){
+    .solid2 {
+                  
+        width: 20.5rem !important;
+    }
+    .solid3{
+        width: 4.3rem !important;
+    }
+    .card-container{
+        width: 60rem;
+    }
+.secondcard1,.secondcard2
+{
+    margin-right:2.5rem;
+}
+
+.secondcard3{
+    margin-left: 0.5rem;
+}
+}
